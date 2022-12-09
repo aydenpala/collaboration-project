@@ -1,4 +1,7 @@
-let mySprite = sprites.create(img`
+namespace SpriteKind {
+    export const Target = SpriteKind.create()
+}
+let Apple = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . 7 7 . . . . . . . . 
@@ -15,4 +18,5 @@ let mySprite = sprites.create(img`
     . . 2 2 2 2 2 2 2 . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
-    `, SpriteKind.Player)
+    `, SpriteKind.Target)
+Apple.setPosition(randint(0, 10), randint(0, 10))
