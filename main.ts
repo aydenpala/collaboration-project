@@ -2,7 +2,12 @@ namespace SpriteKind {
     export const Target = SpriteKind.create()
     export const FPSKind = SpriteKind.create()
 }
-let Apple = sprites.create(img`
+sprites.onOverlap(SpriteKind.FPSKind, SpriteKind.Target, function (sprite, otherSprite) {
+    info.startCountdown(10)
+    Apple.destroy(effects.disintegrate, 500)
+})
+let Apple: Sprite = null
+Apple = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . 7 7 . . . . . . . . 
