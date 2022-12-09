@@ -1,5 +1,6 @@
 namespace SpriteKind {
     export const Target = SpriteKind.create()
+    export const FPSKind = SpriteKind.create()
 }
 let Apple = sprites.create(img`
     . . . . . . . . . . . . . . . . 
@@ -20,3 +21,22 @@ let Apple = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Target)
 Apple.setPosition(randint(0, 10), randint(0, 10))
+let Cursor = sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . 1 1 1 1 1 1 1 . . . . . 
+    . . . 1 . . . . . . . 1 . . . . 
+    . . . 1 . . . . . . . 1 . . . . 
+    . . . 1 . . . . . . . 1 . . . . 
+    . . . 1 . . . 2 . . . 1 . . . . 
+    . . . 1 . . . . . . . 1 . . . . 
+    . . . 1 . . . . . . . 1 . . . . 
+    . . . 1 . . . . . . . 1 . . . . 
+    . . . . 1 1 1 1 1 1 1 . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.FPSKind)
+controller.moveSprite(Cursor)
