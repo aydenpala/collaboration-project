@@ -17,3 +17,4 @@ let mySprite = sprites.create(img`
     . . . . . . . . . . . . c c . . 
     `, SpriteKind.Player)
 controller.moveSprite(mySprite)
+music.baDing.play()
