@@ -24,7 +24,7 @@ Apple = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Target)
-Apple.setPosition(randint(0, 10), randint(0, 10))
+Apple.setPosition(randint(1, 115), randint(1, 115))
 let Cursor = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
